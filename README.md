@@ -58,9 +58,11 @@ Abra o terminal e rode o comando 'npm install';
 - Cadastra um novo produto.
 - Para cadastrar um novo produto, é preciso escrever no body um objeto com o campo `name`. Vamos testar? 
 
-    ```{
+    ```
+    {
     "name": "Novo produto"
-    }```
+    }
+    ```
 
 - Cole o texto acima no campo `body` e configure a rota para `POST`. Agora é só enviar a requisição.
 > A interação precisa possuir o campo `name` contendo uma string com no mínimo 5 caracteres.
@@ -69,9 +71,11 @@ Abra o terminal e rode o comando 'npm install';
 - Modifica um produto já existente.
 - Para modificar um produto, é preciso identificar seu id na URL e escrever no body um objeto com o campo `name`. Vamos testar? 
 
-    ```{
+    ```
+    {
     "name": "Produto modificado"
-    }```
+    }
+    ```
 
 - Cole o texto acima no campo `body` e configure a rota para `PUT`. Agora é só enviar a requisição.
 > É preciso que o id da rota seja de um produto existente e a interação precisa possuir o campo `name` contendo uma string com no mínimo 5 caracteres.
@@ -84,19 +88,21 @@ Abra o terminal e rode o comando 'npm install';
 - Cadastra um novo registro de venda.
 - Para cadastrar um novo produto, é preciso escrever no body um array com objetos possuindo os campos `productId` e `quantity`. Vamos testar? 
 
-    ```[{
+    ```
+    [{
     "productId": 2,
     "quantity": 1
     },
     {
     "productId": 1,
     "quantity": 1
-    }]```
+    }]
+    ```
 
 - Cole o texto acima no campo `body` e configure a rota para `POST`. Agora é só enviar a requisição.
 > É preciso que existam dois campos: `productId` e `quantity`; que `productId` seja de um produto existente; e que `quantity` seja igual ou maior que 1.
 
->💡Teste colocar valores inválidos para ver como as validações da aplicação se comportam. 
+**💡Teste colocar valores inválidos para ver como as validações da aplicação se comportam.**
 
 ## Testes:
 Foram implementados 28 testes nesta aplicação. Todas as camadas foram testadas, juntamente com as validações de requisições.
