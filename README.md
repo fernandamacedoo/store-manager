@@ -109,5 +109,6 @@ Foram implementados 28 testes nesta aplicação. Todas as camadas foram testadas
 ### Como rodar os testes?
 - Com a aplicação em execução, abra outro terminal e rode o comando `npm run test:mocha`.
 
-Autora: Fernanda Macêdo
-LinkedIn: https://www.linkedin.com/in/fernandamacedodev/
+## Desenvolvido por: 
+**Fernanda Macêdo**
+***LinkedIn: https://www.linkedin.com/in/fernandamacedodev/***
