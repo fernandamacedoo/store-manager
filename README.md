@@ -112,4 +112,4 @@ Foram implementados 28 testes nesta aplicação. Todas as camadas foram testadas
 ## Desenvolvido por: 
 **Fernanda Macêdo**
 
-***LinkedIn: https://www.linkedin.com/in/fernandamacedodev/***
+*LinkedIn: https://www.linkedin.com/in/fernandamacedodev/*
