@@ -31,7 +31,7 @@ Integração da aplicação com um banco de dados relacional MySQL
 <summary>
 1. Instalando as dependências
 </summary>
-Abra o terminal e rode o comando `npm install`;
+Abra o terminal e rode o comando `npm install` ;
 </details>
 
 <details>
@@ -39,7 +39,7 @@ Abra o terminal e rode o comando `npm install`;
 2. Criando o contâiner no docker
 </summary>
 
-- Certifique-se de que sua porta 3001 está liberada. Para conferir, basta rodar o comando 'docker ps'. Caso esteja ocupada, rode o comando `docker stop nome_do_seu_container`. 
+- Certifique-se de que sua porta 3001 está liberada. Para conferir, basta rodar o comando `docker ps` . Caso esteja ocupada, rode o comando `docker stop nome_do_seu_container`. 
 
 - Escreva em seu terminal `docker-compose up -d` e aguarde uns segundos.
 
