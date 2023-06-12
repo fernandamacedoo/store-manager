@@ -31,7 +31,9 @@ Integração da aplicação com um banco de dados relacional MySQL
 <summary>
 1. Instalando as dependências
 </summary>
-Abra o terminal e rode o comando `npm install` ;
+
+- Abra o terminal e rode o comando `npm install` ;
+
 </details>
 
 <details>
