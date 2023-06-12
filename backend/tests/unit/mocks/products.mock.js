@@ -1,15 +1,15 @@
 const allProducts = [
   {
     id: 1,
-    name: 'Martelo de Thor',
+    name: 'Tênis branco',
   },
   {
     id: 2,
-    name: 'Traje de encolhimento',
+    name: 'Camisa com estampa de flores',
   },
   {
     id: 3,
-    name: 'Escudo do Capitão América',
+    name: 'Bolsa vermelha',
   },
 ];
 

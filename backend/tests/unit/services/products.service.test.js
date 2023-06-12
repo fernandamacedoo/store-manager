@@ -47,16 +47,16 @@ describe('Testa a camada Service dos produtos', function () {
         sinon.stub(productsModel, 'updateProduct').resolves(1);
         sinon.stub(productsModel, 'findById').resolves({
             id: 1,
-            name: 'Chicote da Mulher Maravilha',
+            name: 'Colar de ouro',
           });
         
         // Act
-        const result = await productsService.updateProduct('Chicote da Mulher Maravilha', 1);
+        const result = await productsService.updateProduct('Colar de ouro', 1);
         
         // Assert
         expect(result).to.be.deep.equal({
             id: 1,
-            name: 'Chicote da Mulher Maravilha',
+            name: 'Colar de ouro',
           });
     });
     it('Testa função updateProduct - Validação 1: nome pequeno', async function () {

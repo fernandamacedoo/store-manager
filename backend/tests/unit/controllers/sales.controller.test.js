@@ -23,7 +23,9 @@ describe('Testa a camada Controller dos produtos', function () {
         sinon.restore();
     });
 
-    it('Testa função getAll: retorna status 200 e json com todos os produtos', async function () {
+    it(
+    'Testa função getAll: retorna status 200 e json com todos os produtos', 
+    async function () {
         // Arrange
         sinon.stub(salesService, 'getAll').resolves(allSalesWithSaleId);
 
@@ -33,10 +35,11 @@ describe('Testa a camada Controller dos produtos', function () {
         // Assert
         expect(res.status).to.be.calledWith(200);
         expect(res.json).to.be.calledWith(allSalesWithSaleId);
-    });
+    },
+);
 
     it(
-'Testa função findById com id válido: retorna status 200 e produto específico', 
+    'Testa função findById com id válido: retorna status 200 e produto específico', 
     async function () {
         // Arrange
         sinon.stub(salesService, 'findById').resolves(allSalesWithSaleId[2]);
@@ -50,19 +53,19 @@ describe('Testa a camada Controller dos produtos', function () {
         expect(res.json).to.be.calledWith(allSalesWithSaleId[2]);
     },
 );
-it(
+    it(
     'Testa função findById com id inválido: retorna status 404 e mensagem de erro', 
-        async function () {
-            // Arrange
-            sinon.stub(salesService, 'findById').resolves(false);
+    async function () {
+        // Arrange
+        sinon.stub(salesService, 'findById').resolves(false);
     
-            // Act
-            req.params = { id: 999999 };
-            await salesController.findById(req, res);
+        // Act
+        req.params = { id: 999999 };
+        await salesController.findById(req, res);
             
-            // Assert
-            expect(res.status).to.be.calledWith(404);
-            expect(res.json).to.be.calledWith({ message: 'Sale not found' });
+        // Assert
+        expect(res.status).to.be.calledWith(404);
+        expect(res.json).to.be.calledWith({ message: 'Sale not found' });
         },
     );
 });

@@ -32,7 +32,7 @@ describe('Testa a camada Model dos produtos', function () {
         expect(result).to.be.deep.equal(allProducts[0]);
     });
     it('Testa função createProduct: retorna o id do produto criado', async function () {
-        const bodyContent = { name: 'Chicote da Mulher Maravilha' };
+        const bodyContent = { name: 'Colar de ouro' };
         // Arrange
         sinon.stub(connection, 'execute').resolves([{ insertId: 4 }]);
         
@@ -43,7 +43,7 @@ describe('Testa a camada Model dos produtos', function () {
         expect(result).to.be.deep.equal(4);
     });
     it('Testa função updateProduct: retorna o id do produto criado', async function () {
-        const bodyContent = { name: 'Chicote da Mulher Maravilha' };
+        const bodyContent = { name: 'Colar de ouro' };
         // Arrange
         sinon.stub(connection, 'execute').resolves([{ affectedRows: 1 }]);
         
